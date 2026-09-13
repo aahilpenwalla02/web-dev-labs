@@ -1,35 +1,114 @@
-<!-- Aahil Penwalla — Lab 3 -->
+<!-- Aahil Penwalla — Lab 4 -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Hello, Web!</h1>
 
-    <p>This is my first HTML page for this course.</p>
+    <header>
+        <h1>Hello, Web!</h1>
+        <p>A 4th-year student project for Web Development I</p>
+    </header>
 
-    <h2>About This Page</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <p>This page shows some of the web development skills I want to learn.</p>
+    <main>
 
-    <ul>
-        <li>Creating structured HTML pages</li>
-        <li>Styling websites with CSS</li>
-        <li>Using Git and GitHub</li>
-    </ul>
+        <section id="about">
+            <p>This is my first HTML page for this course.</p>
 
-    <p>
-        Visit the
-        <a href="https://developer.mozilla.org/en-US/" target="_blank">
-            MDN Web Docs
-        </a>
-        to learn more about web development.
-    </p>
+            <h2>About This Page</h2>
 
-    <img src="photo.png" alt="HTML code displayed in Visual Studio Code">
+            <p>This page shows some of the web development skills I want to learn.</p>
+
+            <ul>
+                <li>Creating structured HTML pages</li>
+                <li>Styling websites with CSS</li>
+                <li>Using Git and GitHub</li>
+            </ul>
+
+            <p>
+                Visit the
+                <a href="https://developer.mozilla.org/en-US/" target="_blank">
+                    MDN Web Docs
+                </a>
+                to learn more about web development.
+            </p>
+
+            <img src="photo.png" alt="HTML code displayed in Visual Studio Code">
+        </section>
+
+        <section>
+            <h2>Web Development Skills Learned This Week</h2>
+
+            <table>
+                <caption>Web Development Skills Learned This Week</caption>
+
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>What I Learned</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Semantic HTML</td>
+                        <td>Using header, nav, main, and footer elements to organize a webpage.</td>
+                    </tr>
+
+                    <tr>
+                        <td>HTML Tables</td>
+                        <td>Creating tables with captions, headers, rows, and data cells.</td>
+                    </tr>
+
+                    <tr>
+                        <td>HTML Forms</td>
+                        <td>Creating accessible forms with labels, inputs, a select menu, and a submit button.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="msg">Message</label>
+                <textarea id="msg" name="msg"></textarea>
+
+                <label for="referral">How did you find this page?</label>
+                <select id="referral" name="referral">
+                    <option value="search">Search engine</option>
+                    <option value="social">Social media</option>
+                    <option value="friend">A friend</option>
+                </select>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aahil Penwalla</p>
+    </footer>
+
 </body>
 </html>

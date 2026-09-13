@@ -1,12 +1,17 @@
-/* Aahil Penwalla — Lab 3 */
+/* Aahil Penwalla — Lab 4 */
 
 body {
     font-family: "Trebuchet MS", Arial, sans-serif;
     color: #243447;
     background-color: #f2f7fb;
-    max-width: 700px;
+    max-width: 800px;
     margin: 40px auto;
     padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -20,6 +25,17 @@ h2 {
 p,
 li {
     line-height: 1.6;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 a {
@@ -37,4 +53,56 @@ img {
     margin-top: 20px;
     border: 3px solid #176b87;
     border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #243447;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #d9edf7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
 }

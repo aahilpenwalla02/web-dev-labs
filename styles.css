@@ -1,4 +1,8 @@
-/* Aahil Penwalla — Lab 4 */
+/* Aahil Penwalla — Lab 5 */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Trebuchet MS", Arial, sans-serif;
@@ -11,7 +15,14 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    padding: 24px;
+    background-color: #0f9488;
+    color: white;
+    margin-bottom: 16px;
+}
+
+header h1 {
+    color: white;
 }
 
 h1 {
@@ -27,15 +38,23 @@ li {
     line-height: 1.6;
 }
 
-nav {
-    text-align: center;
+#main-nav {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    background-color: #0d3b36;
     margin-bottom: 30px;
 }
 
-nav a {
-    margin: 0 15px;
+#main-nav a {
+    color: white;
     text-decoration: none;
+    padding: 12px;
     font-weight: bold;
+}
+
+#main-nav a:hover {
+    background-color: #14b8a6;
 }
 
 a {
@@ -67,15 +86,15 @@ caption {
     margin-bottom: 10px;
 }
 
-th,
-td {
-    border: 1px solid #243447;
-    padding: 10px;
-    text-align: left;
+thead {
+    background-color: #e6f7f4;
 }
 
-th {
-    background-color: #d9edf7;
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
 }
 
 form {
@@ -88,7 +107,11 @@ form {
 input,
 textarea,
 select {
-    padding: 10px;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-bottom: 12px;
     font-size: 1rem;
 }
 
@@ -100,6 +123,7 @@ button {
     padding: 10px;
     font-size: 1rem;
     cursor: pointer;
+    max-width: 120px;
 }
 
 footer {

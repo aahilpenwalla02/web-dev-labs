@@ -1,188 +1,117 @@
-/* Aahil Penwalla — Lab 6 */
+<!-- Aahil Penwalla — Lab 6 -->
 
-* {
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-body {
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    color: #243447;
-    background-color: #f2f7fb;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-}
+<body>
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    text-align: center;
-    padding: 24px;
-    background-color: #0f9488;
-    color: white;
-    margin-bottom: 16px;
-}
+    <header>
+        <h1>Hello, Web!</h1>
+        <p>A 4th-year student project for Web Development I</p>
+    </header>
 
-header h1 {
-    color: white;
-}
+    <nav id="main-nav">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-h1 {
-    color: #176b87;
-}
+    <main>
 
-h2 {
-    color: #2a9d8f;
-}
+        <section id="about">
+            <p>This is my first HTML page for this course.</p>
 
-p,
-li {
-    line-height: 1.6;
-}
+            <h2>About This Page</h2>
 
-#main-nav {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    background-color: #0d3b36;
-    margin-bottom: 30px;
-}
+            <p>This page shows some of the web development skills I want to learn.</p>
 
-#main-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    font-weight: bold;
-    transition: background-color 0.2s ease;
-}
+            <ul>
+                <li>Creating structured HTML pages</li>
+                <li>Styling websites with CSS</li>
+                <li>Using Git and GitHub</li>
+            </ul>
 
-#main-nav a:hover {
-    background-color: #14b8a6;
-}
+            <p>
+                Visit the
+                <a href="https://developer.mozilla.org/en-US/" target="_blank">
+                    MDN Web Docs
+                </a>
+                to learn more about web development.
+            </p>
 
-a {
-    color: #d35400;
-}
+            <div class="image-wrap">
+                <img src="photo.png" alt="HTML code displayed in Visual Studio Code">
+                <span class="badge">New</span>
+            </div>
+        </section>
 
-a:hover {
-    color: #a04000;
-}
+        <section>
+            <h2>Web Development Skills Learned This Week</h2>
 
-/* Image wrapper and badge positioning */
-.image-wrap {
-    position: relative;
-    display: inline-block;
-}
+            <table>
+                <caption>Web Development Skills Learned This Week</caption>
 
-.badge {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background-color: #dc2626;
-    color: white;
-    padding: 2px 8px;
-    border-radius: 4px;
-    z-index: 5;
-    font-size: 0.85rem;
-    font-weight: bold;
-}
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>What I Learned</th>
+                    </tr>
+                </thead>
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border: 3px solid #176b87;
-    border-radius: 10px;
-}
+                <tbody>
+                    <tr>
+                        <td>Semantic HTML</td>
+                        <td>Using header, nav, main, and footer elements to organize a webpage.</td>
+                    </tr>
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
+                    <tr>
+                        <td>HTML Tables</td>
+                        <td>Creating tables with captions, headers, rows, and data cells.</td>
+                    </tr>
 
-caption {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+                    <tr>
+                        <td>HTML Forms</td>
+                        <td>Creating accessible forms with labels, inputs, a select menu, and a submit button.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-thead {
-    background-color: #e6f7f4;
-}
+        <section id="contact">
+            <h2>Contact Me</h2>
 
-th,
-td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-}
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-}
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
-input,
-textarea,
-select {
-    display: block;
-    width: 100%;
-    max-width: 400px;
-    padding: 8px;
-    margin-bottom: 12px;
-    font-size: 1rem;
-}
+                <label for="msg">Message</label>
+                <textarea id="msg" name="msg"></textarea>
 
-textarea {
-    min-height: 100px;
-}
+                <label for="referral">How did you find this page?</label>
+                <select id="referral" name="referral">
+                    <option value="search">Search engine</option>
+                    <option value="social">Social media</option>
+                    <option value="friend">A friend</option>
+                </select>
 
-button {
-    padding: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    max-width: 120px;
-}
+                <button type="submit">Send</button>
+            </form>
+        </section>
 
-footer {
-    text-align: center;
-    margin-top: 40px;
-}
+    </main>
 
-/* Part 2: Media Queries */
+    <footer>
+        <p>&copy; 2026 Aahil Penwalla</p>
+    </footer>
 
-/* Tablet Breakpoint (<= 900px) */
-@media (max-width: 900px) {
-    body {
-        margin: 20px auto;
-        padding: 20px;
-    }
-    table {
-        font-size: 0.95rem;
-    }
-    input,
-    textarea,
-    select {
-        max-width: 100%;
-    }
-}
-
-/* Phone Breakpoint (<= 600px) */
-@media (max-width: 600px) {
-    #main-nav {
-        flex-direction: column;
-        align-items: stretch;
-        text-align: center;
-    }
-    h1 {
-        font-size: 1.5rem;
-    }
-    header {
-        padding: 16px;
-    }
-}
+</body>
+</html>

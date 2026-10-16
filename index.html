@@ -1,4 +1,4 @@
-<!-- Aahil Penwalla — Lab 7 -->
+<!-- Aahil Penwalla — Lab 8 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,10 +26,14 @@
 
         <section id="interactive">
             <h2>Page Interactions</h2>
-            <button id="like-btn">Like this page</button>
+
+            <button id="like-btn" type="button">Like this page</button>
             <p id="like-count">0 likes</p>
 
-            <button id="theme-btn">Toggle dark mode</button>
+            <!-- Part 3: JavaScript updates this reward message. -->
+            <p id="like-message"></p>
+
+            <button id="theme-btn" type="button">Toggle dark mode</button>
         </section>
 
         <section id="about">
@@ -39,22 +43,22 @@
 
             <p>This page shows some of the web development skills I want to learn.</p>
 
-            <ul>
-                <li>Creating structured HTML pages</li>
-                <li>Styling websites with CSS</li>
-                <li>Using Git and GitHub</li>
-            </ul>
+            <!-- Part 2: JavaScript creates the list items from an array. -->
+            <ul id="goals-list"></ul>
 
             <p>
                 Visit the
-                <a href="https://developer.mozilla.org/en-US/" target="_blank">
+                <a href="https://developer.mozilla.org/en-US/"
+                   target="_blank"
+                   rel="noopener noreferrer">
                     MDN Web Docs
                 </a>
                 to learn more about web development.
             </p>
 
             <div class="image-wrap">
-                <img src="photo.png" alt="HTML code displayed in Visual Studio Code">
+                <img src="photo.png"
+                     alt="HTML code displayed in Visual Studio Code">
                 <span class="badge">New</span>
             </div>
         </section>
@@ -75,17 +79,26 @@
                 <tbody>
                     <tr>
                         <td>Semantic HTML</td>
-                        <td>Using header, nav, main, and footer elements to organize a webpage.</td>
+                        <td>
+                            Using header, nav, main, and footer elements
+                            to organize a webpage.
+                        </td>
                     </tr>
 
                     <tr>
                         <td>HTML Tables</td>
-                        <td>Creating tables with captions, headers, rows, and data cells.</td>
+                        <td>
+                            Creating tables with captions, headers,
+                            rows, and data cells.
+                        </td>
                     </tr>
 
                     <tr>
                         <td>HTML Forms</td>
-                        <td>Creating accessible forms with labels, inputs, a select menu, and a submit button.</td>
+                        <td>
+                            Creating accessible forms with labels, inputs,
+                            a select menu, and a submit button.
+                        </td>
                     </tr>
                 </tbody>
             </table>

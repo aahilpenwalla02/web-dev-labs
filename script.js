@@ -1,5 +1,14 @@
 // Aahil Penwalla — Lab 8
 
+// Part 1: Synchronous and asynchronous execution.
+console.log("1. Starting");
+
+setTimeout(function() {
+    console.log("2. This runs later");
+}, 1000);
+
+console.log("3. This runs immediately");
+
 // Select the page elements.
 const likeBtn = document.querySelector("#like-btn");
 const likeCount = document.querySelector("#like-count");
